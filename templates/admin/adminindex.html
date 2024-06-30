@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz</title>
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: skyblue;
+    }
+    .container {
+      margin-top: 100px;
+    }
+    .jumbotron {
+      background-color: black;
+      color: black ;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Welcome to online quiz</h1>
+      <p>Manage your C_programming,Python,Django and Java with ease.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Form</h5>
+            <p class="card-text">Add, edit, and delete python in the system.</p>
+            <a href="/Python/" class="btn btn-primary">go to exam</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Quiz</h5>
+            <p class="card-text">Add, edit, and delete C_programming in the system.</p>
+            <a href="/C_programming/" class="btn btn-primary">go to exam</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Manage Typeform</h5>
+            <p class="card-text">Add, edit, and delete Django in the system.</p>
+            <a href="/Django/" class="btn btn-primary">go to exam</a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Manage Typeform</h5>
+              <p class="card-text">Add, edit, and delete cpp in the system.</p>
+              <a href="/cpp/" class="btn btn-primary">go to exam</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Manage Typeform</h5>
+                <p class="card-text">Add, edit, and delete DSA in the system.</p>
+                <a href="/DSA/" class="btn btn-primary">go to exam</a>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>

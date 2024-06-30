@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz</title>
+  <!-- Bootstrap CSS -->
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 70px;
+      /* Adjust padding to accommodate the fixed navbar */
+    }
+  </style>
+</head>
+
+<body>
+  {% include 'header.html' %}
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">C_programming</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/C_programming/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">cpp</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/cpp/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Django</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/Django/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Java</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/Java/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/Python/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">DSA</h5>
+            <p class="card-text">MCQS</p>
+            <a href="/DSA/" class="btn btn-primary">GO TO EXAM</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  {% include 'footer.html' %}
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
